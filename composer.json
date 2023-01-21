@@ -1,0 +1,41 @@
+{
+    "name": "subashrijal5/chatgpt-laravel",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Subash Rijal",
+            "email": "subashrijal5@gmail.com",
+            "homepage": "https://github.com/subashrijal5"
+        }
+    ],
+    "homepage": "https://github.com/subashrijal5/chatgpt-laravel",
+    "keywords": ["Laravel", "ChatgptLaravel", "OpenAI", "Openai Api"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Subashrijal5\\ChatgptLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Subashrijal5\\ChatgptLaravel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Subashrijal5\\ChatgptLaravel\\ChatgptLaravelServiceProvider"
+            ],
+            "aliases": {
+                "ChatgptLaravel": "Subashrijal5\\ChatgptLaravel\\Facades\\ChatgptLaravel"
+            }
+        }
+    }
+}
