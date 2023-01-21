@@ -4,7 +4,7 @@ return [
     'base_url' => 'https://api.openai.com/v1/',
 
 
-    'api_key' => env('OPENAI_API_KEY', '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'),
+    'api_key' => env('OPENAI_API_KEY', null),
 
 
     'max_tokens' => env('OPENAI_MAX_TOKENS', 100),
