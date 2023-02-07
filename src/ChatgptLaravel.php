@@ -86,4 +86,9 @@ class ChatgptLaravel
         $promt = "Solve this: {$problem}";
         return ApiService::request($promt, 'mathematical-problem');
     }
+
+    public function askQuestion(string $question): array
+    {
+        return ApiService::request($question, 'general');
+    }
 }
