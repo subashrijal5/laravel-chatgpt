@@ -18,5 +18,6 @@ return [
         'story-teller' => 'text-davinci-003',
         'study-notes' => 'text-davinci-003',
         'mathematical-problem' => 'text-davinci-003',
+        'general' => 'text-davinci-003',
     ]
 ];
