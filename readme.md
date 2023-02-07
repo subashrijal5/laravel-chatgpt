@@ -29,6 +29,7 @@ available methods:
 ```
 use Subashrijal5\ChatgptLaravel\Facades\ChatgptLaravel;
 
+ChatgptLaravel::askQuestion('Your question');
 ChatgptLaravel::correctGrammer('Your Topic');
 ChatgptLaravel::essayWriter('Your Topic');
 ChatgptLaravel::essayOutline('Your Topic');
