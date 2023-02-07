@@ -17,7 +17,7 @@ class ApiService
         ])->post(config('chatgpt-laravel.base_url') . 'completions', [
             'model' => config('chatgpt-laravel.models.' . $model),
             'prompt' => $prompt,
-            'max_tokens' => config('chatgpt-laravel.max_tokens')
+            'max_tokens' => intval(config('chatgpt-laravel.max_tokens'))
         ]);
         return $response->json();
     }
